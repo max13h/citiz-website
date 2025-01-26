@@ -3,6 +3,7 @@ import { Banner } from "./banner";
 import { CarDivider } from "./carDivider";
 import { Navbar } from "./navbar";
 import { Location } from "./location";
+import { Autopartage } from "./autopartage";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -18,6 +19,7 @@ export default function Home() {
       <Banner/>
       <CarDivider/>
       <Location/>
+      <Autopartage/>
     </>
   )
 }

@@ -11,7 +11,7 @@ export function Location() {
         <input type="text" placeholder="Recherchez un endroit" className="shadow-sm border border-gray-light w-full px-4 py-2 rounded-full" />
       </div>
       <div className="w-1/3 flex flex-col justify-center gap-4">
-        <h2 className="font-header font-bold text-3xl">Nos bornes près de chez vous !</h2>
+        <h2 className="header">Nos bornes près de chez vous !</h2>
         <p>
           <strong>Citiz</strong> dans le Grand Est, c'est :
           <ul className="list-disc list-inside">

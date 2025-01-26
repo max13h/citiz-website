@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-header {
-  font-family: "Arimo";
-}
-.font-description {
-  font-family: "Overpass";
-}
-
 html,
 body {
   @apply bg-white font-sans text-gray-dark;
@@ -16,4 +9,15 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+.font-header {
+  font-family: "Arimo";
+}
+.font-description {
+  font-family: "Overpass";
+}
+
+.header {
+  @apply font-header font-bold text-3xl
 }
