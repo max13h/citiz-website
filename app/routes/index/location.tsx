@@ -1,6 +1,6 @@
 export function Location() { 
   return (
-    <section className="flex gap-16 w-full justify-center py-16 bg-gray-light">
+    <section className="flex gap-16 w-full justify-center py-16">
       <div className="flex flex-col justify-center items-center gap-4">
         <iframe 
           className="w-[500px] h-[500px] rounded-3xl shadow-md"

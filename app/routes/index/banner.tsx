@@ -25,7 +25,7 @@ export function Banner() {
   )
 
   return (
-    <section className="flex justify-center items-center gap-16 mt-8">
+    <section className="flex justify-center items-center gap-16">
       <div className="w-3/5 flex justify-end">
         <div className="flex flex-col gap-2 w-[600px]">
           {
@@ -47,7 +47,7 @@ export function Banner() {
           }
         </div>
       </div>
-      <img src="https://images.unsplash.com/photo-1563096080-761dbf0020b9?q=80&w=2373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo d'illustration Citiz" className={"w-2/5 object-cover object-[60%] rounded-l-3xl shadow-sm "} style={{height: imgHeight}} />
+      <img src="https://images.unsplash.com/photo-1563096080-761dbf0020b9?q=80&w=2373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo d'illustration Citiz" className={"w-2/5 object-cover object-[60%] rounded-l-3xl shadow-sm"} style={{height: imgHeight}} />
     </section>
   )
 }

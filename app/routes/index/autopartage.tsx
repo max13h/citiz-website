@@ -1,6 +1,6 @@
 export function Autopartage() {
   return (
-    <section className="flex flex-col gap-8 items-center py-8">
+    <section className="flex flex-col gap-8 items-center py-16 bg-gray-light">
       <h2 className="header">C'est quoi l'autopartage ?</h2>
       <p className="w-full max-w-[720px] text-center text-lg">
         Prenez une voiture <strong>Citiz</strong>, profitez-en, puis ramenez-là à son emplacement <br />
