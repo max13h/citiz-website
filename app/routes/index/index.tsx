@@ -2,6 +2,7 @@ import type { Route } from "./+types/";
 import { Banner } from "./banner";
 import { CarDivider } from "./carDivider";
 import { Navbar } from "./navbar";
+import { Location } from "./location";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar/>
       <Banner/>
       <CarDivider/>
+      <Location/>
     </>
   )
 }
