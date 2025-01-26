@@ -12,7 +12,7 @@ export function Location() {
       </div>
       <div className="w-1/3 flex flex-col justify-center gap-4">
         <h2 className="header">Nos bornes près de chez vous !</h2>
-        <p>
+        <div>
           <strong>Citiz</strong> dans le Grand Est, c'est :
           <ul className="list-disc list-inside">
             <li>Près de 400 voitures accessibles en libre-service 24h/24</li>
@@ -20,7 +20,7 @@ export function Location() {
             <li>Location pour une heure, une journée ou plus.</li>
             <li>5 catégories de voitures, à choisir pour chaque déplacement en fonction de vos projets.</li>
           </ul>
-        </p>
+        </div>
         <p>
           Vous pouvez également retrouver les stations des autres services Citiz <br/>
           À Besançon, Dijon, Lyon, Marseille, Grenoble, Toulouse, Bordeaux, etc.

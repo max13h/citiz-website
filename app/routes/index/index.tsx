@@ -4,6 +4,7 @@ import { CarDivider } from "./carDivider";
 import { Navbar } from "./navbar";
 import { Location } from "./location";
 import { Autopartage } from "./autopartage";
+import { Simulateur } from "./simulateur";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -20,6 +21,7 @@ export default function Home() {
       <CarDivider/>
       <Location/>
       <Autopartage/>
+      <Simulateur/>
     </>
   )
 }
