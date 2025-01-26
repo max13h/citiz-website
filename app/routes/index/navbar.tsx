@@ -26,7 +26,7 @@ export function Navbar() {
               [
                 {
                   to: "/autopartage",
-                  text: "L'auto partage, c'est quoi ?"
+                  text: "L'autopartage, c'est quoi ?"
                 },
                 {
                   to: "/tarifs",
@@ -36,7 +36,7 @@ export function Navbar() {
                   to: "/qui-sommes-nous",
                   text: "Qui sommes nous ?"
                 }
-              ].map(el => (<NavLink to={el.to} className="hover:opacity-50 underline">{el.text}</NavLink>) )
+              ].map((el, i) => (<NavLink key={i} to={el.to} className="hover:opacity-50 underline">{el.text}</NavLink>) )
             }
           </div>
           <div className="flex gap-4">
