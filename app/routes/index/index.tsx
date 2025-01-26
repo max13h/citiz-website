@@ -1,5 +1,6 @@
 import type { Route } from "./+types/";
 import { Banner } from "./banner";
+import { CarDivider } from "./carDivider";
 import { Navbar } from "./navbar";
 
 export function meta({}: Route.MetaArgs) {
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Navbar/>
       <Banner/>
+      <CarDivider/>
     </>
   )
 }
