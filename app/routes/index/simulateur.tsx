@@ -24,7 +24,7 @@ interface SimulatorState {
 export function Simulateur() {
   // Constants
   const clientTypes = ["Particulier", "Professionnel"];
-  const cars = [
+  const cars: Car[] = [
     { type: "S", hourlyRate: 5.5, dailyRate: 39, weeklyRate: 180, kmRate: 0.42, kmRateAfter100: 0.22, imgUrl: "https://grand-est.citiz.coop/bundles/cooptilleulsportail/img/car-s.png" },
     { type: "M", hourlyRate: 6, dailyRate: 45, weeklyRate: 210, kmRate: 0.42, kmRateAfter100: 0.22, imgUrl: "https://grand-est.citiz.coop/bundles/cooptilleulsportail/img/car-m.png" },
     { type: "L", hourlyRate: 6.5, dailyRate: 50, weeklyRate: 240, kmRate: 0.42, kmRateAfter100: 0.22, imgUrl: "https://grand-est.citiz.coop/bundles/cooptilleulsportail/img/car-l.png" },

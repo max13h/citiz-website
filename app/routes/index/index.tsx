@@ -5,6 +5,7 @@ import { Navbar } from "./navbar";
 import { Location } from "./location";
 import { Autopartage } from "./autopartage";
 import { Simulateur } from "./simulateur";
+import { Contacts } from "./contacts";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -22,6 +23,7 @@ export default function Home() {
       <Location/>
       <Autopartage/>
       <Simulateur/>
+      <Contacts/>
     </main>
   )
 }
