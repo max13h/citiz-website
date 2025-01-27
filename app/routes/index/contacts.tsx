@@ -18,15 +18,15 @@ const Links = [
   },
 ]
 
-export function Contacts() {
+export function Contacts({ color }: { color: "dark" | "light" }) {
   return (
-    <section className="py-16 bg-gray-dark text-white flex justify-center">
+    <section className={`py-16 flex justify-center ${color === "dark" && "bg-gray-dark text-white"}`}>
       <div className="w-full max-w-[920px] flex flex-col items-end justify-end gap-4">
         <h2 className="header">Contacts</h2>
         <p className="text-end">
           This website is a personal project and is not the official website. <br />
           It was created as part of my portfolio to showcase my skills and creativity. <br /> 
-          If you enjoyed this project or would like to learn more, feel free to contact me. <br />
+          If you enjoyed this project or would like to learn more, feel free to <strong>contact me</strong>. <br />
         </p>
       <div className="flex items-center gap-4">
         {

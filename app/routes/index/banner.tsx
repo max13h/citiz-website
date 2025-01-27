@@ -25,7 +25,7 @@ export function Banner() {
   )
 
   return (
-    <section className="flex justify-center items-center gap-16">
+    <section className="flex justify-center items-center gap-16 py-8">
       <div className="w-3/5 flex justify-end mb-16">
         <div className="flex flex-col gap-2 w-[600px]">
           {

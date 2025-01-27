@@ -1,11 +1,9 @@
 import type { Route } from "./+types/";
 import { Banner } from "./banner";
 import { CarDivider } from "./carDivider";
-import { Navbar } from "./navbar";
 import { Location } from "./location";
 import { Autopartage } from "./autopartage";
 import { Simulateur } from "./simulateur";
-import { Contacts } from "./contacts";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -17,13 +15,11 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <main className="relative flex flex-col gap-8">
-      <Navbar/>
       <Banner/>
       <CarDivider/>
       <Location/>
       <Autopartage/>
       <Simulateur/>
-      <Contacts/>
     </main>
   )
 }

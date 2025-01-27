@@ -1,5 +1,6 @@
 import {
   isRouteErrorResponse,
+  Link,
   Links,
   Meta,
   Outlet,
@@ -9,6 +10,8 @@ import {
 
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
+import { Contacts } from "./routes/index/contacts";
+import { Navbar } from "./routes/index/navbar";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,8 +36,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
-        {children}
+      <body className="flex flex-col min-h-screen h-full">
+        <Navbar/>
+        <div className="flex-1">
+          {children}
+        </div>
+        <Contacts color="dark" />
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -46,7 +53,13 @@ export default function App() {
   return <Outlet />;
 }
 
-export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+interface ErrorBoundaryExtended extends Route.ErrorBoundaryProps {
+  error: {
+    status: number
+  }
+}
+
+export function ErrorBoundary({ error }: ErrorBoundaryExtended) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
   let stack: string | undefined;
@@ -63,14 +76,29 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
-      <h1>{message}</h1>
-      <p>{details}</p>
-      {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
-          <code>{stack}</code>
-        </pre>
-      )}
-    </main>
+    <>
+      <main className="pt-16 p-4 container mx-auto flex flex-col gap-16">
+        <section className="flex flex-col items-center gap-16">
+          <div className="flex flex-col items-center">
+            <h1 className="header">{message}</h1>
+            <p>{details}</p>
+            {stack && (
+              <pre className="w-full p-4 overflow-x-auto">
+                <code>{stack}</code>
+              </pre>
+            )}
+          </div>
+          {
+            (error.status === 404) && (
+              <div className="flex flex-col gap-2 p-4 border-gray-light border-2 rounded-3xl">
+                <h1 className="text-xl">⚠️ Warning</h1>
+                <p>Only the root page of this website has been implemented</p>
+                <Link to="/" className="text-primary underline">Go back to root</Link>
+              </div>
+            )
+          }
+        </section>
+      </main>
+    </>
   );
 }
