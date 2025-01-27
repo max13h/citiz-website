@@ -21,3 +21,32 @@ body {
 .header {
   @apply font-header font-bold text-3xl
 }
+
+
+.car {
+  animation: car-move 20s linear infinite;
+
+  & .woobling {
+    animation: car-woobling 100ms linear 0s infinite alternate;;
+  }
+}
+
+@keyframes car-woobling {
+  0% {
+    transform: translateY(1.7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* +++++++++++++++++++++++++++ */
+
+@keyframes car-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}

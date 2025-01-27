@@ -10,7 +10,7 @@ export function Banner() {
     setNavbarHeight(navHeight);
   }, []);
 
-  const imgHeight = `calc(90vh - ${navbarHeight}px)`;
+  const imgHeight = `calc(80vh - ${navbarHeight}px)`;
 
   const arrow1 = (
     <svg className="self-center" width="320" height="120" viewBox="0 0 320 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@ export function Banner() {
 
   return (
     <section className="flex justify-center items-center gap-16">
-      <div className="w-3/5 flex justify-end">
+      <div className="w-3/5 flex justify-end mb-16">
         <div className="flex flex-col gap-2 w-[600px]">
           {
             [
