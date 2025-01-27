@@ -2,6 +2,7 @@
   "name": "citiz-website",
   "private": true,
   "type": "module",
+  "homepage": "https://max13h.github.io/citiz-website",
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
