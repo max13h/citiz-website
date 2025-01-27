@@ -126,8 +126,8 @@ export function Simulateur() {
               className={`
                 relative px-4 py-2 shrink-0 w-1/2 text-center 
                 ${isSameClientType ? "bg-gray-light" : ""} 
-                hover:bg-gray-light transition-all duration-200 
-                ${isDisabled ? "opacity-50 cursor-default hover:bg-white" : "cursor-pointer"}
+                 transition-all duration-200 
+                ${isDisabled ? "opacity-50 cursor-default hover:bg-white" : "hover:bg-gray-light cursor-pointer"}
               `}
             >
               {clientType}
