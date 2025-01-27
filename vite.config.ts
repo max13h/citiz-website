@@ -11,5 +11,5 @@ export default defineConfig({
     },
   },
   plugins: [reactRouter(), tsconfigPaths()],
-  base: 'https://max13h.github.io/citiz-website/'
+  base: '/citiz-website/'
 });
