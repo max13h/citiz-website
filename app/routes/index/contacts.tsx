@@ -32,7 +32,7 @@ export function Contacts({ color }: { color: "dark" | "light" }) {
         {
           Links.map((el, i) => {
             return (
-              <Link to={el.url} title={el.name}>
+              <Link key={i}to={el.url} title={el.name}>
                 {el.icon}
               </Link>
             )

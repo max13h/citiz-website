@@ -31,6 +31,7 @@ export function CarDivider() {
                 style={{
                   left: leftPosition[i]
                 }}
+                key={i}
               >
                 <Car className="w-full h-fit woobling" />
               </div>

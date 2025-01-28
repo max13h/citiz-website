@@ -18,10 +18,10 @@ export function Navbar() {
       z-50
     ">
       {location.pathname === "/" ? (
-        <img src="/logo.svg" alt="Citiz logo" className="w-32"/>
+        <img src="/citiz-website/logo.svg" alt="Citiz logo" className="w-32"/>
       ) : (
         <Link to="/">
-          <img src="/logo.svg" alt="Citiz logo" className="w-32"/>
+          <img src="/citiz-website/logo.svg" alt="Citiz logo" className="w-32"/>
         </Link>
       )}
       <div className="w-full flex justify-end gap-8 items-center">
