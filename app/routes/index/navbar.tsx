@@ -20,7 +20,7 @@ export function Navbar() {
       {location.pathname === "/" ? (
         <img src="/citiz-website/logo.svg" alt="Citiz logo" className="w-32"/>
       ) : (
-        <Link to="/">
+        <Link to="/citiz-website">
           <img src="/citiz-website/logo.svg" alt="Citiz logo" className="w-32"/>
         </Link>
       )}
