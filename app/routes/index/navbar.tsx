@@ -17,7 +17,7 @@ export function Navbar() {
       shrink-0
       z-50
     ">
-      {location.pathname === "/" ? (
+      {location.pathname === "/citiz-website" ? (
         <img src="/citiz-website/logo.svg" alt="Citiz logo" className="w-32"/>
       ) : (
         <Link to="/citiz-website">

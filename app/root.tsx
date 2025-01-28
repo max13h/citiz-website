@@ -94,7 +94,7 @@ export function ErrorBoundary({ error }: ErrorBoundaryExtended) {
               <div className="flex flex-col gap-2 p-4 border-gray-light border-2 rounded-3xl">
                 <h1 className="text-xl">⚠️ Warning</h1>
                 <p>Only the root page of this website has been implemented</p>
-                <Link to="/" className="text-primary underline">Go back to root</Link>
+                <Link to="/citiz-website" className="text-primary underline">Go back to root</Link>
               </div>
             )
           }
