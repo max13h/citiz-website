@@ -2,12 +2,7 @@ export function Location() {
   return (
     <section className="flex gap-16 w-full justify-center py-16">
       <div className="flex flex-col justify-center items-center gap-4">
-        <iframe 
-          className="w-[500px] h-[500px] rounded-3xl shadow-md"
-          loading="lazy" 
-          allowFullScreen 
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsbWPxd9VkUcR_RfRz30ZyLk&key=AIzaSyDKDVVNL5FeC6oEKMdVMascV7WDuglvu8c"
-        />
+        <img src="google-map.png" alt="Google map image instead of embeed" className="w-[500px] h-[500px] rounded-3xl shadow-md object-cover" />
         <input type="text" placeholder="Recherchez un endroit" className="shadow-sm border border-gray-light w-full px-4 py-2 rounded-full" />
       </div>
       <div className="w-1/3 flex flex-col justify-center gap-4">
